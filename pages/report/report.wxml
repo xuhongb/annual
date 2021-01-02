@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<canvas bindlongpress="savePoster" id='canvas' class='canvas' style='width:{{canvasWidth}}px; height:{{canvasHeight}}px' canvas-id='firstCanvas' disable-scroll='true'></canvas>
+<view class='cover' wx:if='{{visible}}'>
+	<cover-view class='canvas-box' style="color:#ffffff;" bindlongpress="savePoster">
+		长按保存到相册
+	</cover-view>
+</view>

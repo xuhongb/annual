@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{musicStatus == 0}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/open.png"></image>
+  </view>
+  <view wx:if="{{musicStatus == 1}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/close.png"></image>
+  </view>
+  
+  <view class="text_top">
+    <image class="load_img" src="../img/seach_s.png" mode="widthFix"></image>
+  </view>
+  <view class="text_top_b" bindtap="bindViewTap">
+      <image class="load_img1" src="../img/seach.png" mode="widthFix"></image>
+  </view>
+</view>

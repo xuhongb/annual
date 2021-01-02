@@ -1,0 +1,121 @@
+/**index.wxss**/
+.text_top{
+  font-size: 45rpx;
+  line-height: 80rpx;
+  padding: 50rpx 20rpx 0rpx 50rpx;
+}
+::-webkit-scrollbar
+{
+width: 0;
+height: 0;
+color: transparent;
+}
+.text_top_b{
+  margin-top: 60rpx;
+}
+.load_img{
+  width:600rpx;
+  height: auto;
+}
+.load_img1{
+  width:500rpx;
+  height: auto;
+}
+.load_img2{
+  width:20rpx;
+  height: auto;
+}
+.load_img3{
+  width:180rpx;
+  height: auto;
+}
+.text_s{
+	padding-left: 30rpx;
+	padding-right: 40rpx;
+	text-indent: 0rpx;
+	line-height: 40rpx;
+  text-align: left;
+}
+.str1{
+	color: #FFFFFF;
+	font-size:24rpx ;
+	margin-top:20rpx;
+	padding:0rpx;
+	line-height: 40rpx;
+}
+.str2{
+  text-align: center;
+}
+.usermotto {
+  margin-top: 20px;
+}
+.star{
+  color: #FFFFFF;
+  background-color: #1A1364;
+}
+.entry{
+  font-size: large;
+}
+.music_icon{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  top:30rpx;
+  right: 30rpx;
+}
+.btn {
+	width: 90%;
+	height: 80rpx;
+	font-size: 32rpx;
+	color: #fff;
+	background: rgba(255, 0, 0, 0.7);
+	border-radius: 40rpx;
+}
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+}
+.canvas-box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -40%;
+	margin-top: -230px;
+	width: 80%; 
+	height: 460px;
+	background: #fff;
+}
+.canvas-box canvas {
+	width: 100%;
+	height: 400px;
+}
+.cover .btn {
+	position: absolute;
+	bottom: 20rpx;
+	left: 50%;
+	margin-left: -45%;
+	width: 90%;
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	box-sizing: border-box;
+}
+.btn-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	font-size: 40rpx;
+	color: rgb(255, 0, 0);
+	text-align: center;
+	background: transparent;
+}
+.btn-close::after {
+  border: none
+}

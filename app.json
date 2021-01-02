@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/phone/phone",
+    "pages/query/query",
+    "pages/user/user",
+    "pages/planet/planet",
+    "pages/eventindex/index",
+    "pages/eventphone/phone",
+    "pages/seach/seach",
+    "pages/eventlist/eventlist",
+    "pages/report/report",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "优趣汇",
+    "navigationBarTextStyle":"black"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

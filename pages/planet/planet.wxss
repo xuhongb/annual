@@ -1,0 +1,55 @@
+/**index.wxss**/
+.container_padding{
+  padding: 100px 0px;
+}
+.text_top{
+  text-align: center;
+  margin-top: 140rpx;
+}
+.text_top_b{
+  text-align: center;
+  margin-top: 200rpx;
+}
+.load_img{
+  width:640rpx;
+  height: auto;
+}
+.load_img1{
+  width:240rpx;
+  height: auto;
+}
+.load_img2{
+  width:200rpx;
+  height: auto;
+}
+.input{
+  border: 1px solid blue;
+  width: 500rpx;
+  text-align: center;
+  /**opacity:0.3;透明度**/
+  background: white;
+  font-size: 30rpx;
+  position: relative;
+  min-height: 50rpx;
+  line-height: 60px;
+  margin: 0rpx 0rpx 0rpx 0rpx;
+  padding: 7rpx 0rpx 7rpx 0rpx;
+
+}
+.usermotto {
+  margin-top: 80px;
+}
+.star{
+  color: #FFFFFF;
+  background-color: #1A1364;
+}
+.entry{
+  font-size: large;
+}
+.music_icon{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  top:30rpx;
+  right: 30rpx;
+}

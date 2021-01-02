@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{musicStatus == 0}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/open.png"></image>
+  </view>
+  <view wx:if="{{musicStatus == 1}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/close.png"></image>
+  </view>
+  <view>
+    <image style="width:600rpx;" src="../img/name_title.png" mode="widthFix"></image>
+    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name.png') no-repeat;background-size: contain; background-position:50%;">
+       <input type='text' class="input" placeholder='请正确输入中文姓氏' bindinput='lastNameTap' value="{{lastName}}"></input>
+    </view>
+    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name1.png') no-repeat;background-size: contain; background-position:50%;">
+      <view class="info"> <input type='text' class="input"  placeholder='请正确输入中文名字' bindinput='firstNameTap' value="{{firstName}}"></input></view>
+    </view>
+    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name2.png') no-repeat;background-size: contain; background-position:50%;">
+      <picker mode="date" value="{{entryTime}}" fields="year" start="2010" end="2020" bindchange="bindDateChange">
+        <view class="picker" style="display: flex;flex-direction:row;align-items: center;justify-content: inherit;">
+          <view wx:if="{{entryFlag}}" class="input_de">{{entryTime}}</view>
+          <input wx:if="{{!entryFlag}}" type='text' class="input_de" disabled="true"  placeholder='下拉选择入职年份' bindinput='bindDateChange' ></input>
+          <input type='text' class="input_des" disabled="true" bindinput='bindDateChange' ></input>
+        </view>
+      </picker> 
+    </view>
+    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name3.png') no-repeat;background-size: contain; background-position:50%;">
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker" style="display: flex;flex-direction:row;align-items: center;justify-content: inherit;">
+          <view wx:if="{{deptFlag}}" class="input_dea">{{multiva1}}</view>
+          <view wx:if="{{deptFlag}}" class="input_deaf">{{multiva2}}</view>
+          <input wx:if="{{!deptFlag}}" type='text' class="input_de"  placeholder='下拉选择' disabled="true" bindchange="bindMultiPickerChange" ></input>
+          <input type='text' class="input_des" disabled="true" ></input>
+        </view>
+      </picker> 
+    </view>
+  
+  </view>
+  
+  
+
+  <view class="text_top_b">
+    <view style="text-align: center;">
+      <text style='color: #ffffff;font-size:8px;'>*温馨提示：请确保个人信息填写完整及正确</text>
+    </view>
+    <view wx:if="{{ submit==0 }}" bindtap="bindViewTap">
+      <image class="load_img1" src="../img/submit.png" mode="widthFix"></image>
+    </view>
+    <view wx:if="{{ submit==1 }}" bindtap="bindViewTap">
+      <image class="load_img1" src="../img/submit1.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>

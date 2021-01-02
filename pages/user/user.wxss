@@ -1,0 +1,102 @@
+/**index.wxss**/
+.buClass{
+  padding-top: 40px;
+  text-align: center;
+}
+.text_top{
+  font-size: 40rpx;
+  line-height: 80rpx;
+  padding: 0rpx 0rpx 0rpx 0rpx;
+}
+.page_row_top{
+  display: flex;
+  height:95rpx;
+  width:570rpx;
+  text-align: center;
+}
+.page_row{
+  display: flex;
+  height:95rpx;
+  margin:5rpx 30rpx 5rpx 30rpx;
+}
+.info{
+float:left;
+width:200rpx;
+font-size: 35rpx;
+}
+.input{
+  border: 0px solid blue;
+  width: 450rpx;
+  text-align: center;
+  /**opacity:0.3;透明度**/
+  background: white;
+  font-size: 30rpx;
+  position: relative;
+  min-height: 65rpx;
+  line-height: 60px;
+  margin: 18rpx 0rpx 0rpx 100rpx;
+  border-radius: 15rpx;
+}
+.input_de{
+  border: 0px solid blue;
+  width: 300rpx;
+  text-align: center;
+  background: white;
+  font-size: 30rpx;
+  min-height: 60rpx;
+  margin: 28rpx 0rpx 10rpx 180rpx;
+  color: #000;
+  border-radius: 15rpx;
+}
+.input_des{
+  border: 0px solid red;
+  width: 40rpx;
+  text-align: center;
+  opacity:0;
+  background: white;
+  font-size: 30rpx;
+  min-height: 60rpx;
+  margin: 28rpx 0rpx 10rpx 0rpx;
+  color: #000;
+  border-radius: 15rpx;
+}
+.input_dea{
+  border: 0px solid blue;
+  width: 160rpx;
+  text-align: center;
+  background: white;
+  font-size: 30rpx;
+  height: 50rpx;
+  margin: 28rpx 0rpx 10rpx 180rpx;
+  color: #000;
+  border-radius: 15rpx;
+}
+.input_deaf{
+  border: 0px solid blue;
+  width: 160rpx;
+  text-align: center;
+  background: white;
+  font-size: 30rpx;
+  height: 50rpx;
+  margin: 28rpx 0rpx 10rpx 0rpx;
+  color: #000;
+  border-radius: 15rpx;
+}
+.load_img{
+  width:600rpx;
+  height: auto;
+}
+.load_img1{
+  width:500rpx;
+  height: auto;
+}
+.music_icon{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  top:30rpx;
+  right: 30rpx;
+}
+.text_top_b{
+  margin-top: 260rpx;
+}

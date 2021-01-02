@@ -1,0 +1,32 @@
+
+.text_top{
+  background-size: 100% 100%;
+  padding: 50px;
+}
+.text_top_b{
+  margin-bottom: 10%;
+}
+.music_icon{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  top:30rpx;
+  right: 30rpx;
+}
+.cover {
+	position: fixed;
+	bottom: 30rpx;
+	left: 25%;
+	width: 50%;
+	height: 20rpx;
+	background: rgba(0, 0, 0, 0);
+}
+.canvas-box {
+	position: absolute;
+  bottom: 0rpx;
+  width: 100%;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  z-index: 99999;
+}

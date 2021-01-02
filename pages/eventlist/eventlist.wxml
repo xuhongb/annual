@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{musicStatus == 0}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/open.png"></image>
+  </view>
+  <view wx:if="{{musicStatus == 1}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/close.png"></image>
+  </view>
+  <view style="margin-top:-100rpx;">
+    <view>
+      <image wx:if="{{ year==2010 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2010.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2011 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2011.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2012 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2012.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2013 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2013.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2014 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2014.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2015 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2015.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2016 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2016.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2017 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2017.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2018 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2018.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2019 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2019.png" mode="widthFix"></image>
+      <image wx:if="{{ year==2020 }}" style="width:600rpx;margin-top:50rpx;" src="../img/re2020.png" mode="widthFix"></image>
+      <view wx:if="{{flag}}">
+        <image class="load_img" src="../img/re_t.png" mode="widthFix"></image>
+      </view>
+      <view wx:if="{{!flag}}" style="height:58rpx;">
+      </view>
+    </view>
+    <view class="text_top" style="background: url('https://changningpark.sh.cn/unq/img/border.png') no-repeat;background-size: 100% 100%; background-position:50%;">
+      
+      <scroll-view scroll-y="true" style="width:550rpx;height:400rpx">
+        <view wx:if="{{flag}}" class="str1" style="display: flex;flex-direction:row;align-items: left;justify-content: left;">
+          <view><image class="load_img2" src="../img/yuan.png" mode="widthFix"></image></view>
+          <view class="text_s"><text>新入职员工：{{year}}年，{{name}}入职。</text></view>
+        </view>
+        <view wx:for="{{eventList}}" class="str1" style="display: flex;flex-direction:row;align-items: left;justify-content: left;">
+          <view><image class="load_img2" src="../img/yuan.png" mode="widthFix"></image></view>
+          <view class="text_s"><text>{{item}}。</text></view>
+        </view>
+          
+      </scroll-view>
+      <view wx:if="{{year==2017||year==2018||year==2019}}" class="str2">
+        <image class="load_img3" src="../img/re_alert.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <view class="text_top_b">
+    <view wx:if="{{flag}}" bindtap="bindViewTap">
+      <image class="load_img1" src="../img/report.png" mode="widthFix"></image>
+    </view>
+    <view wx:if="{{!flag}}">
+      <navigator class="close" target="miniProgram" open-type="exit" style="width:250rpx">
+          <image style="width: 250rpx;margin-bottom:50rpx ;"  src="../img/re_exit.png" mode="widthFix"></image>
+      </navigator>
+    </view>
+  </view>
+
+</view>
+

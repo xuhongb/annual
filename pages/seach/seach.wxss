@@ -1,0 +1,22 @@
+/**index.wxss**/
+
+.text_top{
+  font-size: 40rpx;
+  line-height: 80rpx;
+  width: 600rpx;
+  padding: 0rpx 0rpx 0rpx 0rpx;
+}
+.img_c{
+  width: 300rpx;
+  padding: 10rpx 150rpx;
+}
+.row_bu{
+  text-align: center;
+}
+.music_icon{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  top:30rpx;
+  right: 30rpx;
+}

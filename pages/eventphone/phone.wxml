@@ -1,0 +1,20 @@
+<view class="container">
+  <view wx:if="{{musicStatus == 0}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/open.png"></image>
+  </view>
+  <view wx:if="{{musicStatus == 1}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/close.png"></image>
+  </view>
+  
+  <view class="text_top">
+    <image class="load_img" src="../img/lock_t.png" mode="widthFix"></image>
+  </view>
+  <view class="text_top_b">
+    <image class="load_img2" src="../img/lock_c.png" mode="widthFix"></image>
+    <input type='number' class="input" maxlength="11" placeholder='请输入本人手机号码' bindinput='phoneNum'></input>
+    <view  bindtap="bindViewTap" style="margin-top:36rpx;">
+      <image class="load_img1" src="../img/lock_s.png" mode="widthFix"></image>
+    </view>
+  </view>
+  
+</view>

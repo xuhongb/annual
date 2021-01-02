@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{musicStatus == 0}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/open.png"></image>
+  </view>
+  <view wx:if="{{musicStatus == 1}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/close.png"></image>
+  </view>
+<view style="margin-top:-120px;">
+  <view class="text_top" style="background: url('https://changningpark.sh.cn/unq/img/border.png') no-repeat;background-size: 100% 100%; background-position:50%;">
+    <image style="width: 600rpx;padding:60rpx 2rpx 10rpx 2rpx;"  src="../img/seach_content.png" mode="widthFix"></image>
+    <view class="row_bu"  style="display: flex;flex-direction:row;align-items: center;justify-content: center;">
+      <view>
+        <navigator class="close" target="miniProgram" open-type="exit" style="width:240rpx">
+          <image style="width: 240rpx;margin-bottom:50rpx ;"  src="../img/seach_exit.png" mode="widthFix"></image>
+        </navigator>
+      </view>
+      
+    </view>
+  </view>
+</view>
+<view>
+  
+</view>
+</view>

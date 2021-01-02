@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{musicStatus == 0}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/open.png"></image>
+  </view>
+  <view wx:if="{{musicStatus == 1}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/close.png"></image>
+  </view>
+  <view wx:if="{{year == 2010}}" class="text_top">
+    <image class="load_img" src="../img/sign2010.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2011}}" class="text_top">
+    <image class="load_img" src="../img/sign2011.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2012}}" class="text_top">
+    <image class="load_img" src="../img/sign2012.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2013}}" class="text_top">
+    <image class="load_img" src="../img/sign2013.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2014}}" class="text_top">
+    <image class="load_img" src="../img/sign2014.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2015}}" class="text_top">
+    <image class="load_img" src="../img/sign2015.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2016}}" class="text_top">
+    <image class="load_img" src="../img/sign2016.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2017}}" class="text_top">
+    <image class="load_img" src="../img/sign2017.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2018}}" class="text_top">
+    <image class="load_img" src="../img/sign2018.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2019}}" class="text_top">
+    <image class="load_img" src="../img/sign2019.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{year == 2020}}" class="text_top">
+    <image class="load_img" src="../img/sign2020.png" mode="widthFix"></image>
+  </view>
+  <view>
+    <view class="text_top_b">
+      <navigator class="close" target="miniProgram" open-type="exit" style="width:240rpx">
+        <image class="load_img1" style="margin-bottom:10rpx ;"  src="../img/sign_exit.png" mode="widthFix"></image>
+      </navigator>
+      <image class="load_img2"  src="../img/sign_exits.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>

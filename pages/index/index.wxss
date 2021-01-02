@@ -1,0 +1,24 @@
+/**index.wxss**/
+
+
+.text_top{
+  margin-top: 0rpx;
+}
+.text_top_b{
+  margin-top: 200rpx;
+}
+.load_img{
+  width:640rpx;
+  height: auto;
+}
+.load_img1{
+  width:500rpx;
+  height: auto;
+}
+.music_icon{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  top:30rpx;
+  right: 30rpx;
+}

@@ -1,0 +1,22 @@
+<view class="container">
+  <view wx:if="{{musicStatus == 0}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/open.png"></image>
+  </view>
+  <view wx:if="{{musicStatus == 1}}" bindtap="openAndColse">
+    <image class="music_icon" src="../img/close.png"></image>
+  </view>
+  
+  <view class="text_top">
+    <image class="load_img" src="../img/sign_s.png" mode="widthFix"></image>
+  </view>
+  <view class="text_top_b">
+    <input type='number' class="input" maxlength="11" placeholder='请输入本人手机号码' bindinput='phoneNum'></input>
+    <view style="text-align: center;line-height: 20rpx;">
+      <text style='color: #ffffff;font-size:8px;'>*温馨提示：请正确填写本人中国大陆11位手机号作为本次\n活动的身份验证</text>
+    </view>
+    <view  bindtap="bindViewTap">
+      <image class="load_img1" src="../img/qiandao.png" mode="widthFix"></image>
+    </view>
+  </view>
+  
+</view>
