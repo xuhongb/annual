@@ -8,13 +8,13 @@
   </view>
   <view>
     <image style="width:600rpx;" src="../img/name_title.png" mode="widthFix"></image>
-    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name.png') no-repeat;background-size: contain; background-position:50%;">
+    <view class="page_row_top" style="background: url('../img/name.png') no-repeat;background-size: contain; background-position:50%;">
        <input type='text' class="input" placeholder='请正确输入中文姓氏' bindinput='lastNameTap' value="{{lastName}}"></input>
     </view>
-    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name1.png') no-repeat;background-size: contain; background-position:50%;">
+    <view class="page_row_top" style="background: url('../img/name1.png') no-repeat;background-size: contain; background-position:50%;">
       <view class="info"> <input type='text' class="input"  placeholder='请正确输入中文名字' bindinput='firstNameTap' value="{{firstName}}"></input></view>
     </view>
-    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name2.png') no-repeat;background-size: contain; background-position:50%;">
+    <view class="page_row_top" style="background: url('../img/name2.png') no-repeat;background-size: contain; background-position:50%;">
       <picker mode="date" value="{{entryTime}}" fields="year" start="2010" end="2020" bindchange="bindDateChange">
         <view class="picker" style="display: flex;flex-direction:row;align-items: center;justify-content: inherit;">
           <view wx:if="{{entryFlag}}" class="input_de">{{entryTime}}</view>
@@ -23,7 +23,7 @@
         </view>
       </picker> 
     </view>
-    <view class="page_row_top" style="background: url('https://changningpark.sh.cn/unq/img/name3.png') no-repeat;background-size: contain; background-position:50%;">
+    <view class="page_row_top" style="background: url('../img/name3.png') no-repeat;background-size: contain; background-position:50%;">
       <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
         <view class="picker" style="display: flex;flex-direction:row;align-items: center;justify-content: inherit;">
           <view wx:if="{{deptFlag}}" class="input_dea">{{multiva1}}</view>
