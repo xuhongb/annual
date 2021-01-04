@@ -7,7 +7,7 @@
     <image class="music_icon" src="../img/close.png"></image>
   </view>
 <view style="margin-top:-120px;">
-  <view class="text_top" style="background: url('https://changningpark.sh.cn/unq/img/border.png') no-repeat;background-size: 100% 100%; background-position:50%;">
+  <view class="text_top" style="background: url('../img/border.png') no-repeat;background-size: 100% 100%; background-position:50%;">
     <image style="width: 600rpx;margin-top:50rpx ;"  src="../img/sign_content.png" mode="widthFix"></image>
     <view class="row_bu"  style="display: flex;flex-direction:row;align-items: center;justify-content: center;">
       <view>
